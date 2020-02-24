@@ -1,0 +1,85 @@
+/* h1{
+    color:blue;
+    color:rgb(0,255,0);
+    color:#00ff00;
+} */
+body{
+    color:#333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+background-color:#dcdcdc;
+margin:0px;
+
+}
+
+.container{
+    background-color:darkcyan;
+    width:400px;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex; /*子要素を横並びにする */
+    align-items:center;
+    padding-top:32px;
+    padding-bottom:32px;
+}
+
+.icon img{
+    border-radius:50%;
+    border-width:4px;
+    border-style: solid;
+    border-color:white;
+}
+
+.info{
+    margin-left:32px;
+}
+.info h1{
+    font-weight:nomal;
+    font-size:24px;
+    margin:0px;
+}
+.info p{
+    margin:0px;
+    margin-bottom:16px;
+}
+.info ul{
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+    display:flex;
+}
+.info li{
+    margin-right:8px;
+}
+
+.works{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.works > h1{
+    /* works直下のh1に適用 */
+    font-weight:normal;
+    font-size:24px;
+    text-align:center;
+    margin-top:60px;
+    margin-bottom:60px;
+}
+.works > section{
+    margim-bottom:60px;
+}
+.works>section>h1{
+    font-weight:normal;
+}
+.works>p{
+    line-height:1.8;
+    /* p要素内の行間を文字サイズの1.8倍にする */
+}
+fotter p{
+    text-align:center;
+    font-size:14px;
+    margin-bottom:10px;
+    color:gray;
+}
