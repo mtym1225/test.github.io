@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/earlyaccess/notosansjapanese.css');
+ 
+body {
+    margin:0;
+    padding:0;
+    font-family: "Noto Sans Japanese"; 
+    color:darkslategray;
+    font-weight: lighter;
+}
+
+.button{
+    margin:0 auto;
+    text-align: center; 
+    padding:32px 0px;
+}
+.button a{
+    text-decoration: none;
+    color:darkslategray;
+}
+
+
+#top h1{
+    margin:32px auto;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 32px;
+
+}
+
+.index{
+    width:100%;
+    margin:0 auto;
+    display: flex; 
+}
+
+.prf{
+    width: 32%;
+    margin:0 1%;
+    padding:5%;
+    border-radius: 10%;
+    background-color: teal;
+    text-align:center;
+    list-style-type: none;
+}
+
+
+
+
+.prf a{
+    text-decoration: none;
+    color:white;
+}
+.prf:hover{
+    opacity: 0.7;
+    transition: all 0.3s ease 0s;
+}
+
+
+.block1{
+    margin:0;
+    text-align: center;
+    background: moccasin;
+}
+
+.block2{
+    margin:0;
+    text-align: center;
+}
+
+
+#profile .info{
+    margin:0 auto ;
+    text-align: left;
+    width:70%;
+
+}
+
+#profile img{
+    border-radius: 50%;
+    border-color: teal;
+    border-style: dotted;
+    border-width: 4px;
+    width: 200px;
+}
+#profile a{
+    text-decoration: none;
+    color:darkslategrey;
+    text-align: center;
+}
+
+#works{
+    margin:10px auto 0;
+    text-align: center;
+}
+
+#works pic{
+    margin:0 auto;
+    width:250px;
+}
+*#works img{
+    width:250px;
+}
+
+#works .info{
+    margin:0 auto;
+    margin:0 auto 64px;
+    width: 250px;
+    text-align: left;
+}
+#works .web-page h3{
+    font-weight: normal;
+}
+
+
+/*works .pic a{
+    display: inline-block;
+    width: 45%;
+}*/
+
+#works .info a{
+    color:darkred;
+    font-weight: lighter;
+}
+
+
+.box{
+    margin: 24px auto;
+    width:70%;
+    padding:2%;
+    font-weight: lighter;
+    background-color: teal;
+    color: white;
+    border-left:5px solid white ;
+    text-align: left;
+}
+
+.box a{
+    color:darkred;
+    font-weight: normal;   
+}
+.message{
+    margin:64px auto;
+    width:80%;
+}
+
+#lightbox .lb-container { padding: 3px; }
+#lightbox .lb-container { padding: 0px; }
+#lightbox .lb-outerContainer { padding: 6px; }
+
+@media (min-width: 460px) {
+    /*.lum-lightbox-inner img {
+        max-width: 100%;
+        max-height: 100%;
+    }*/
+    .index{
+	    width:460px;
+	    margin:0 auto;
+	    display: flex; 
+	}
+
+	.prf{
+	    width: 460px;
+	    margin:0 6px;
+	    padding:23px;
+	    border-radius: 10%;
+	    background-color: teal;
+	    text-align:center;
+	    list-style-type: none;
+	   /* display: table-cell;*/ 
+}
+
+    
+    
+  }
+  
+@media (min-width :900px) {
+    #profile{
+        display: flex;
+        width :800px;
+        margin:0 auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #profile pic{
+        width: 200px;
+        padding: 50px;
+    }
+    #profile info{
+        width: 630px ;
+    }
+    #works{
+        display: flex;
+        width :800px;
+        margin:0 auto;
+        /*justify-content: space-between;*/
+    }
+    #works .web-page{
+        width: 250px;
+        padding:10px;
+    }
+    
+     #skills {
+       width:800px;
+       display:flex;
+       margin:0 auto;
+    }
+
+    #skills .box{
+        width: 350px;
+        padding:10px;
+    }
+   .message{
+         width :640px;
+   }
+   
+   .block1{
+        width: 850px;
+        margin:0 auto;
+   }
+
+
+}
