@@ -17,6 +17,13 @@
  
 <body>
 <div class="wrap">
+   
+
+
+
+
+
+
 <div id="top">
     <h1>わたしの自己紹介</h1>
 </div> 
@@ -57,16 +64,42 @@
 
 </div>
 
-<div class="block2">
-<h1>works</h1>
+ <div id="mask" class="hidden"></div>
+ 
+ <div class="block2">
+     <h1>works</h1>    
+     <!---モーダルウィンドウ--->
+             <section id="modal1" class="hidden">
+                 <img src="img/taro.png">
+                 <div id="close1">
+                   閉じる
+                </div>
+             </section>
+             <section id="modal2" class="hidden">
+                <img src="img/apri.png">
+                <div id="close2">
+                  閉じる
+               </div>
+            </section>
+            <section id="modal3" class="hidden">
+                <img src="img/me.png">
+                <div id="close3">
+                  閉じる
+               </div>
+            </section>
 
-<div id="works">
-    
+    <div id="works"> 
     <div class="web-page">
         
         <h3>山田太郎氏のポートフォリオ</h3>
+
+
         <div class="pic">
-            <a class="luminous" href="img/taro.png"><img src="img/taro.png" alt="山田太郎氏のポートフォリオ"></a>
+
+            <div class="fukidashi" id="open1" >
+            <img src="img/taro.png" alt="山田太郎氏のポートフォリオ">
+            <span class="balloon">クリックで拡大</span>
+            </div>
         </div>
         <div class="info">
         <a href="https://dotinstall.com/lessons/basic_html_v5">
@@ -80,8 +113,10 @@
     <div class="web-page">
         <h3>すごいアプリ紹介ページ</h3>
         <div class="pic">
-            <a href="img/apri.png"　data-lightbox="abc" data-title="すごいアプリ紹介ページ">
-                <img src="img/apri.png" alt="すごいアプリ紹介ページ"></a>
+            <div class="fukidashi" id="open2" >
+                <img src="img/apri.png" alt="すごいアプリ紹介ページ">
+                <span class="balloon">クリックで拡大</span>
+            </div>
         </div>
         <div class="info">
         <a href="https://dotinstall.com/lessons/website_html_v4">
@@ -93,21 +128,123 @@
 
     </div>
 
+
+
     <div class="web-page">
         <h3>わたしのポートフォリオ</h3>
         <div class="pic">
-            <a class="luminous" href="img/me.png"><img src="img/me.png" alt="わたしのポートフォリオ"></a>
+            <div class="fukidashi" id="open3" >
+                <img src="img/me.png" alt="わたしのポートフォリオ">
+                <span class="balloon">クリックで拡大</span>
+            </div>
         </div>
         <div class="info">
         貴社に応募するにあたり、作成しました。
-            <small> <a href="https://mtym1225.github.io/test.github.io/">
-            Githubはこちら</a></small>
+            <small> <a href="https://github.com/mtym1225/test.github.io" target="_blank">Githubはこちら</a></small>
         
         </div>
 
     </div>
- 
+
+    </div>
+
+         <!---モーダルウィンドウ--->
+         <section id="modal4" class="hidden">
+            <img src="img/omikuji.png">
+            <div id="close4">
+              閉じる
+           </div>
+        </section>
+        <section id="modal5" class="hidden">
+            <img src="img/stopwatch.png">
+            <div id="close5">
+              閉じる
+           </div>
+        </section>
+        <section id="modal6" class="hidden">
+            <img src="img/slot.png">
+            <div id="close6">
+              閉じる
+           </div>
+        </section>
+
+
+
+
+
+<div id="works2"> 
+<div class="web-page">
+   
+   <h3>凶ばっかのおみくじ</h3>
+
+
+   <div class="pic">
+
+       <div class="fukidashi" id="open4" >
+       <img src="img/omikuji.png" alt="凶ばっかのおみくじ">
+       <span class="balloon">クリックで拡大</span>
+       </div>
+   </div>
+   <div class="info">
+   <a href="https://dotinstall.com/lessons/omikuji_js_v5">
+       ドットインストール「JavaScriptでおみくじを作ろう」</a>
+       にて作成しました。&nbsp;
+   
+   </div>
+   
 </div>
+<div class="web-page">
+   
+    <h3>ストップウォッチ</h3>
+ 
+ 
+    <div class="pic">
+ 
+        <div class="fukidashi" id="open5" >
+        <img src="img/stopwatch.png" alt="ストップウォッチ">
+        <span class="balloon">クリックで拡大</span>
+        </div>
+    </div>
+    <div class="info">
+    <a href="https://dotinstall.com/lessons/stop_watch_js_v6">
+        ドットインストール「JavaScriptでストップウォッチを作ろう」</a>
+        にて作成しました。&nbsp;
+    
+    </div>
+    
+ </div>
+ <div class="web-page">
+   
+    <h3>スロットゲーム</h3>
+ 
+ 
+    <div class="pic">
+ 
+        <div class="fukidashi" id="open6" >
+        <img src="img/slot.png" alt="スロットゲーム">
+        <span class="balloon">クリックで拡大</span>
+        </div>
+    </div>
+    <div class="info">
+    <a href="https://dotinstall.com/lessons/slot_js_v5">
+        ドットインストール「JavaScriptでスロットマシンを作ろう」</a>
+        にて作成しました。&nbsp;
+    
+    </div>
+    
+ </div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
 <div class="button">
     ...これから増えます！！！<br><a href="#top">back to top</a>
 </div>
@@ -146,59 +283,10 @@
 
 </div>
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
-<!-- 
-   <link rel="stylesheet" href="./luminous-basic.min.css">
-   <script src="./luminous.min.js"></script>
 
-    <script>
-        var options = {
-        closeOnScroll: true,
-        closeWithEscape: true,
-        caption: function (trigger) {
-            return trigger.querySelector('img').getAttribute('alt');
-        },
-        }
-        var luminousTrigger = document.querySelectorAll('.luminous');
-        if( luminousTrigger !== null ) {
-        new LuminousGallery(luminousTrigger);
-        }
-    </script> -->
+<script src="js/main.js"></script>
 
-<script>
-    var scrollElm = (function() {
-      if('scrollingElement' in document) return document.scrollingElement;
-      if(navigator.userAgent.indexOf('WebKit') != -1) return document.body;
-      return document.documentElement;
-    })();
-    (function() {
-      var duration = 800;
-      var ignore = '.noscroll';
-      var easing = function (t, b, c, d) { return c * (0.5 - Math.cos(t / d * Math.PI) / 2) + b; }; //jswing
-      var smoothScrollElm = document.querySelectorAll('a[href^="#"]:not(' + ignore +')');
-      Array.prototype.forEach.call(smoothScrollElm, function(elm) {
-        elm.addEventListener('click', function(e) {
-          e.preventDefault();
-          var targetElm = document.querySelector(elm.getAttribute('href'));
-          if(!targetElm) return;
-          var targetPos = targetElm.getBoundingClientRect().top;
-          var startTime = Date.now();
-          var scrollFrom = scrollElm.scrollTop;
-          (function loop() {
-            var currentTime = Date.now() - startTime;
-            if(currentTime < duration) {
-              scrollTo(0, easing(currentTime, scrollFrom, targetPos, duration));
-              window.requestAnimationFrame(loop);
-            } else {
-              scrollTo(0, targetPos + scrollFrom);
-            }
-          })();
-        })
-      });
-    })();
-    </script>
- 
 </body>
 </html>
