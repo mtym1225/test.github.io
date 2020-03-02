@@ -88,38 +88,62 @@ body {
     text-align: center;
 }
 
-#works{
+#works, #works2{
     margin:10px auto 0;
     text-align: center;
 }
 
-#works pic{
+#works pic, #works2 pic{
     margin:0 auto;
     width:250px;
 }
-*#works img{
-    width:250px;
-}
 
-#works .info{
+
+#works .info, #works2 .info {
     margin:0 auto;
     margin:0 auto 64px;
     width: 250px;
     text-align: left;
 }
-#works .web-page h3{
+#works .web-page h3, #works2 .web-page h3{
     font-weight: normal;
 }
 
+.fukidashi {
+    position   : relative;                /* 指定した分だけ相対的に移動 */
+  }
+  .fukidashi:hover .balloon {
+    display: inline;                /* インライン要素として表示 */
+  }
+  .balloon {
+    position   : absolute; 
+    font-weight: normal;               /* 親要素を基準 */
+    display: none;                        /* 要素を非表示 */
+    padding: 2px;       
+    color: darkslategray;                       /* テキストの前後の余白 */
+    background-color: rgba(255, 127, 127, 0.9);       /* 背景色（透明度） */
+    width:180px; 
+    line-height: 2;                         /* 吹き出し全体の幅 */
+    left : 30%;                           /* 表示位置 */
+    bottom : 100%;                        /* 表示位置 */
+    margin-bottom : 12px;                 /* 表示位置 */
+    font-size: 100%;                       /* 文字サイズ */
+  }
+  .balloon:after{
+    border-top: 12px solid rgba(255, 127, 127, 0.9);    /* 吹き出し口の高さ・色 */
+    border-left: 10px solid transparent;    /* 吹き出し口の幅１／２ */
+    border-right: 10px solid transparent;   /* 吹き出し口の幅１／２ */
+    bottom: -12px;                          /* 吹き出し口の位置調整 */
+    left : 5%;                              /* 吹き出し口の横位置 */
+    content: "";                       /* コンテンツの挿入 */
+    position: absolute;                /* 親要素を基準 */
+  }
 
-/*works .pic a{
-    display: inline-block;
-    width: 45%;
-}*/
 
-#works .info a{
-    color:darkred;
-    font-weight: lighter;
+#works .info a, #works2 .info a{
+    /* color:darkred; */
+    color: darkslategray;
+    font-weight: normal;
 }
 
 
@@ -143,15 +167,61 @@ body {
     width:80%;
 }
 
-#lightbox .lb-container { padding: 3px; }
-#lightbox .lb-container { padding: 0px; }
-#lightbox .lb-outerContainer { padding: 6px; }
+#mask {
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+
+#mask.hidden{
+    display: none;
+}
+
+#open1 img, #open2 img, #open3 img, #open4 img, #open5 img, #open6 img{
+    width:250px;
+    cursor: pointer;
+
+}
+
+#modal1.hidden, #modal2.hidden, #modal3.hidden, #modal4.hidden, #modal5.hidden, #modal6.hidden{
+    display: none;
+}
+#modal1, #modal2, #modal3, #modal4, #modal5, #modal6{
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    left: 50%;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 2; 
+  }
+#modal1 img, #modal2 img, #modal3 img, #modal4 img, #modal5 img, #modal6 img{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#close1, #close2, #close3, #close4, #close5, #close6 {
+    cursor: pointer;
+    opacity: 0.8;
+    background: #333;
+    color: white;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    padding: 12px 0;
+    margin: 16px auto 0;
+    z-index: 3;
+}
+
 
 @media (min-width: 460px) {
-    /*.lum-lightbox-inner img {
-        max-width: 100%;
-        max-height: 100%;
-    }*/
+
     .index{
 	    width:460px;
 	    margin:0 auto;
@@ -166,7 +236,7 @@ body {
 	    background-color: teal;
 	    text-align:center;
 	    list-style-type: none;
-	   /* display: table-cell;*/ 
+
 }
 
     
@@ -188,13 +258,13 @@ body {
     #profile info{
         width: 630px ;
     }
-    #works{
+    #works, #works2{
         display: flex;
         width :800px;
         margin:0 auto;
         /*justify-content: space-between;*/
     }
-    #works .web-page{
+    #works .web-page, #works2 .web-page{
         width: 250px;
         padding:10px;
     }
@@ -217,6 +287,12 @@ body {
         width: 850px;
         margin:0 auto;
    }
+
+   #modal1 img,  #modal2 img, #modal3 img, #modal4 img,  #modal5 img, #modal6 img{
+    width: 640px;
+    margin: 0 auto;
+}
+
 
 
 }
