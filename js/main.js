@@ -17,11 +17,6 @@
     mask.classList.add('hidden');
     modal1.classList.add('hidden');
    });
-
-   mask.addEventListener('click', () =>{
-    close1.click(); //closeをクリックした時の動作
-   });
-
 }
 {
     const open2 = document.getElementById('open2');
@@ -42,9 +37,6 @@
     modal2.classList.add('hidden');
    });
 
-   mask.addEventListener('click', () =>{
-    close2.click(); //closeをクリックした時の動作
-   });
 
 }
 {
@@ -66,9 +58,6 @@
     modal3.classList.add('hidden');
    });
 
-   mask.addEventListener('click', () =>{
-    close3.click(); //closeをクリックした時の動作
-   });
 
 }
 {
@@ -88,10 +77,6 @@
    close4.addEventListener('click', () =>{
     mask.classList.add('hidden');
     modal4.classList.add('hidden');
-   });
-
-   mask.addEventListener('click', () =>{
-    close4.click(); //closeをクリックした時の動作
    });
 
 }
@@ -114,9 +99,6 @@
     modal5.classList.add('hidden');
    });
 
-   mask.addEventListener('click', () =>{
-    close5.click(); //closeをクリックした時の動作
-   });
 
 }
 {
@@ -136,10 +118,6 @@
    close6.addEventListener('click', () =>{
     mask.classList.add('hidden');
     modal6.classList.add('hidden');
-   });
-
-   mask.addEventListener('click', () =>{
-    close6.click(); //closeをクリックした時の動作
    });
 
 }
